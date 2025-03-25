@@ -22,6 +22,13 @@ function App() {
     setTaskList(result); 
   }
 
+  const handleCreateNewTask = () =>{
+    setTaskList((prev) => [
+      ...prev,
+      { id: 0, title: "your title", description: "write your description", is_completed: false },
+    ]);
+  }
+
   useEffect(()=> {
     fetch_all_tasks(); 
   }, [])
@@ -37,6 +44,10 @@ function App() {
               is_completed={ele.is_completed}
             />
       ))}
+      
+      <button
+        onClick={handleCreateNewTask}
+      >Create New Task</button>
     </>
   )
 }
