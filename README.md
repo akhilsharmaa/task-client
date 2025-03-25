@@ -1,4 +1,4 @@
- ## Deployed Link: [taskalgoroot.vercel.app](taskalgoroot.vercel.app)
+ ## Deployed Link: [taskalgoroot.vercel.app](https://taskalgoroot.vercel.app/)
 
 
 ## SETUP Frontend:  
