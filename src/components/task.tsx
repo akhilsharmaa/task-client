@@ -136,7 +136,7 @@ function TaskCard(props: Task) {
                 <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">{newDescription}</p>
             )}  
 
-            {isEditing && (
+            {isEditing && id != 0 && (
                 <button 
                     type="button"
                     onClick={handleSaveButton}
